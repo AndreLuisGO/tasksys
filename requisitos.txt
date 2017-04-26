@@ -1,0 +1,19 @@
+Objetivo geral:
+Gerar uma aplicação (frontend/backend) que contenha um CRUD para criação de tarefas, além da opção de setar cada tarefa como concluída.
+
+Objetivos:
+- O backend deve ser feito em Django usando banco de dados PostgreSQL;
+- O frontend não será servido pelo Django, e este deve consumir serviços REST do Django
+- O projeto deve ser comitado no github.
+
+Não é necessário:
+- Autenticação
+
+Bônus:
+- Readme com instruções para rodar a aplicação e executar testes locais
+- Deploy on Google Cloud (todas as contas Google vem com um teste gratuito)
+- TDD
+- Para frontend:
+  - NPM
+  - REACT
+  - FLUX
