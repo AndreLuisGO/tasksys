@@ -1,5 +1,7 @@
 # api/models.py
 from django.db import models
+from datetime import datetime
+from django.utils.timezone import now
 
 # Create your models here.
 class Tarefas(models.Model):

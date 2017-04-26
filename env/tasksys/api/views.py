@@ -13,3 +13,11 @@ class CreateView(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         """Salva os dados do POST quando cria uma nova lista de Tarefas"""
         serializer.save()
+
+
+
+class DetailsView(generics.RetrieveUpdateDestroyAPIView):
+    """Esta classe cuida das requisicoes do http GET, PUT e DELETE"""
+
+    queryset = Tarefas.objects.all()
+    serializer_class= SerializerTarefas

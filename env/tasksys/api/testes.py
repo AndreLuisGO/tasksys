@@ -38,5 +38,36 @@ Class ViewTestCase(TestCase):
         )
 
     def teste_api_pode_criar_tarefas(self):
-        """Testa se a API tem capacidade de criar"""
+        """Testa se a API tem capacidade CREATE"""
         self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)
+
+    def  teste_api_pode_recuperar_tarefas(self):
+        """Testa se a API tem capacidade GET """
+        tarefas = Tarefas.objects.get()
+        response = self.client.get(
+            reverse('details'),
+            kwargs={'pk': tarefas.id}, format="json"
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertContains(response, tarefas)
+
+    def teste_api_pode_atualizar_tarefas(self):
+        """Testa se a API tem capacidade de UPDATE em uma lista de tarefas"""
+        altera_tarefa ={'nome':'Tarefa Nova'}
+        res = self.client.put(
+            reverse('detalhes', kwargs={'pk': tarefas.id}),
+            altera_tarefa, format='json'
+        )
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+    def teste_api_pode_deletar_tarefas(self):
+        """Testa se a API tem capacidade de DELETE em uma lista de tarefas"""
+        tarefas = Tarefas.objects.get()
+        response = self.client.delete(
+            reverse('details', kwargs = {'pk': tarefas.id}),
+            format='json',
+            follow =True
+        )
+
+        self.assertEquals(response.status_code, status.HTTP_204_NO_CONTENT)
