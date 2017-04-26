@@ -12,5 +12,5 @@ class SerializerTarefas(serializers.ModelSerializer):
     class Meta:
         """Classe Meta para mapear  os capmos do serializer com os campos do Modelo"""
         model = Tarefas
-        fields = ('id', 'nome', 'data_criada', 'data_modificada')
+        fields = ('id', 'nome', 'concluida', 'data_criada', 'data_modificada')
         read_only_fields =('data_criada', 'data_modificada')
