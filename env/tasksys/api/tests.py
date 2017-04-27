@@ -13,9 +13,9 @@ class ModelTestCase(TestCase):
     def setUp(self):
         """Define o cliente de teste e outras variaveis de teste"""
         self.tarefas_nome = "Definir nome de tarefas"
-        self.tarefas = Tarefas(nome=self.tarefas_nome)
+        self.tarefas = Tarefas(name=self.tarefas_nome)
 
-    def modelo_teste_para_criar_tarefas(self):
+    def teste_para_criar_tarefas(self):
         """Testa o modelo de tarefas para criar uma lista de tarefas"""
         old_count = Tarefas.objects.count()
         self.tarefas.save()
