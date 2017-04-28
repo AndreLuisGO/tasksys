@@ -13,9 +13,9 @@ class ModelTestCase(TestCase):
     def setUp(self):
         """Define o cliente de teste e outras variaveis de teste"""
         self.tarefas_nome = "Definir nome de tarefas"
-        self.tarefas = Tarefas(name=self.tarefas_nome)
+        self.tarefas = Tarefas(nome=self.tarefas_nome)
 
-    def teste_para_criar_tarefas(self):
+    def test_model_can_create_tarefas(self):
         """Testa o modelo de tarefas para criar uma lista de tarefas"""
         old_count = Tarefas.objects.count()
         self.tarefas.save()
@@ -24,7 +24,7 @@ class ModelTestCase(TestCase):
 
 
 
-Class ViewTestCase(TestCase):
+class ViewTestCase(TestCase):
     """Conjunto de testes para as views da API"""
 
     def setUp(self):
@@ -37,11 +37,11 @@ Class ViewTestCase(TestCase):
             format="json"
         )
 
-    def teste_api_pode_criar_tarefas(self):
+    def test_api_can_create_tarefas(self):
         """Testa se a API tem capacidade CREATE"""
         self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)
 
-    def  teste_api_pode_recuperar_tarefas(self):
+    def  test_api_can_get_tarefas(self):
         """Testa se a API tem capacidade GET """
         tarefas = Tarefas.objects.get()
         response = self.client.get(
@@ -52,7 +52,7 @@ Class ViewTestCase(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertContains(response, tarefas)
 
-    def teste_api_pode_atualizar_tarefas(self):
+    def test_api_ca_update_tarefas(self):
         """Testa se a API tem capacidade de UPDATE em uma lista de tarefas"""
         altera_tarefa ={'nome':'Tarefa Nova'}
         res = self.client.put(
@@ -61,7 +61,7 @@ Class ViewTestCase(TestCase):
         )
         self.assertEqual(res.status_code, status.HTTP_200_OK)
 
-    def teste_api_pode_deletar_tarefas(self):
+    def test_api_can_delete_tarefas(self):
         """Testa se a API tem capacidade de DELETE em uma lista de tarefas"""
         tarefas = Tarefas.objects.get()
         response = self.client.delete(
