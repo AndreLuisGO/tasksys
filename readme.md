@@ -17,7 +17,7 @@ Estas instruções irão permitir que você obtenha uma cópia do projeto e exec
     - Python
 
 
-Certifique-se de possuir o Python instalado em sua máquina (versão 2.7.X)
+Certifique-se de possuir o Python 3 instalado em sua máquina
 
 
 Para manter as configurações apenas neste projeto, utilize o *virtualenv*  (veja instalação para mais detalhes)
