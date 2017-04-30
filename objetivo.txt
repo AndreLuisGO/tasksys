@@ -3,7 +3,8 @@ Gerar uma aplicação (frontend/backend) que contenha um CRUD para criação de 
 
 Objetivos:
 - O backend deve ser feito em Django usando banco de dados PostgreSQL;
-- O frontend não será servido pelo Django, e este deve consumir serviços REST do Django
+- O frontend não será servido pelo Django, e este deve consumir
+ serviços REST do Django.
 - O projeto deve ser comitado no github.
 
 Não é necessário:

@@ -9,18 +9,22 @@ Desenvolvido utilizando os packages incluidos em : `./requirements.txt` (veja in
 
 Estas instruções irão permitir que você obtenha uma cópia do projeto e execute-a na sua máquina local para desenvolvimento e testes.
 
-### Prerequisites
+### Pré-requisitos
 
- Conhecimento básico em:
-    - Terminal/console/bash/prompt de comando
-    - git
-    - Python
-
-
-Certifique-se de possuir o Python instalado em sua máquina (versão 2.7.X)
+1.  Conhecimento básico em:
+    * Terminal/console/bash/prompt de comando;
+    * git;
+    * Python;
+    * virtualenv;
 
 
-Para manter as configurações apenas neste projeto, utilize o *virtualenv*  (veja instalação para mais detalhes)
+
+1. Certifique-se de possuir o Python instalado em sua máquina (versão 2.7.X);
+
+1. Instalação do PostgreSQL9.5;
+
+
+Para manter as configurações apenas neste projeto, utilize o [*virtualenv*](https://virtualenv.pypa.io/en/stable/)  (veja instalação para mais detalhes)
 
 
 
@@ -38,20 +42,18 @@ Após feito, navegue até a pasta com
 $ cd tasksys
 ```
 
+* Modifique as configurações de conexão com o banco de dados no arquivo  `tasksys/settings.py`, nas linhas 88-91 com seu usuário, senha, host e portas conforme suas configurações.
+
+
+
 
 1 - Instale o pip utilizando:
 ```
 $ sudo easy_install pip
 ```
 
-2 - Navegue até a pasta env e ative o ambiente virtual env
-```
-$ cd env/Scripts
-```
-```
-$ activate
-```
-Caso o ambiente tenha sido ativado, você irá notar o nome `env` no terminal:
+2 - Ative o seu ambiente virtual (virtualenv)
+Caso o ambiente tenha sido ativado, você irá notar o nome do mesmo (ex: `env`) no terminal:
 ```
 (env) $
 ```
@@ -59,9 +61,9 @@ Caso o ambiente tenha sido ativado, você irá notar o nome `env` no terminal:
 Pronto, agora estamos prontos para instalar as dependências para que o projeto seja executado.
 
 
-3 - Para instalação das dependências, navegue até a pasta /env/tasksys :
+3 - Para instalação das dependências, navegue até a pasta raiz do projeto tasksys :
 ```
-cd ../tasksys
+cd /tasksys
 ```
 
 4 - Agora, instale os requisitos:
@@ -103,57 +105,25 @@ ou
 
 onde o /1/ deve ser a chave primária (PK) da tarefa que se deseja obter os dados. ( no caso, da tarefa de PK = 1)
 
-
-## TODO Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
+## Deploy
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
+## Construído com
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Dango](https://www.djangoproject.com/)
+* [Django Rest Framework](www.django-rest-framework.org/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Psycopg2](http://initd.org/psycopg/)
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Autor
 
-## Versioning
+* **André Luis Oliveira** - *Initial work* - [PurpleBooth](https://github.com/AndreLuisGO)
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
-## Authors
+## Reconhecimentos
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Toda a vasta comunidade de desenvolvedores do StackOverflow
+* [Derek Banas](https://www.youtube.com/derekbanas) e seus incríveis tutoriais.
+* Todos que, de alguma maneira, contribuíram para o sucesso do projeto, mesmo que moralmente.
