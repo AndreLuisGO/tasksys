@@ -18,10 +18,8 @@ Estas instruções irão permitir que você obtenha uma cópia do projeto e exec
     * virtualenv;
 
 
-<<<<<<< HEAD
-=======
-Certifique-se de possuir o Python 3 instalado em sua máquina
->>>>>>> origin/master
+1. Certifique-se de possuir o Python 3 instalado em sua máquina
+
 
 1. Certifique-se de possuir o Python instalado em sua máquina (versão 2.7.X);
 
@@ -123,7 +121,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Autor
 
-* **André Luis Oliveira** - *Initial work* - [PurpleBooth](https://github.com/AndreLuisGO)
+* [**André Luis Oliveira**] - (https://github.com/AndreLuisGO)
 
 
 ## Reconhecimentos
