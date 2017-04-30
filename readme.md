@@ -18,6 +18,10 @@ Estas instruções irão permitir que você obtenha uma cópia do projeto e exec
     * virtualenv;
 
 
+<<<<<<< HEAD
+=======
+Certifique-se de possuir o Python 3 instalado em sua máquina
+>>>>>>> origin/master
 
 1. Certifique-se de possuir o Python instalado em sua máquina (versão 2.7.X);
 
