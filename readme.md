@@ -53,10 +53,18 @@ $ sudo easy_install pip
 ```
 
 2 - Ative o seu ambiente virtual (virtualenv)
+
+NOTA: utilize a flag -p python3  para criar seu ambiente virtual. A ausência dessa flag pode causar erros ao iniciar o servidor.
+ex:
+  ```
+virtualenv -p python3 .env 
+  ```
+
 Caso o ambiente tenha sido ativado, você irá notar o nome do mesmo (ex: `env`) no terminal:
 ```
 (env) $
 ```
+
 
 Pronto, agora estamos prontos para instalar as dependências para que o projeto seja executado.
 
