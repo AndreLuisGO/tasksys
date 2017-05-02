@@ -18,8 +18,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nome', models.CharField(max_length=255, unique=True)),
-                ('data_criada', models.DateTimeField(auto_now_add=True)),
-                ('date_modificada', models.DateTimeField(auto_now=True)),
+                ('concluida', models.CharField(max_length=255, unique=False, default="Nao")),
             ],
         ),
     ]

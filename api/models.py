@@ -6,10 +6,8 @@ from django.utils.timezone import now
 # Create your models here.
 class Tarefas(models.Model):
     """Esta classe representa o modelo de Tarefas """
-    nome = models.CharField(max_length=255, blank=False, unique=True)
+    nome = models.CharField(max_length=255, blank=False, unique=False)
     concluida = models.BooleanField(default=False)
-    data_criada = models.DateTimeField(auto_now_add=True)
-    data_modificada = models.DateTimeField(auto_now=True)
 
 
     def __str__(self):

@@ -52,8 +52,9 @@ class ViewTestCase(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertContains(response, tarefas)
 
-    def test_api_ca_update_tarefas(self):
+    def test_api_can_update_tarefas(self):
         """Testa se a API tem capacidade de UPDATE em uma lista de tarefas"""
+        tarefa = Tarefa.objects.get()
         altera_tarefa ={'nome':'Tarefa Nova'}
         res = self.client.put(
             reverse('detalhes', kwargs={'pk': tarefas.id}),

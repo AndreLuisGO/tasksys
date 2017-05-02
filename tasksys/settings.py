@@ -79,6 +79,8 @@ WSGI_APPLICATION = 'tasksys.wsgi.application'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
+APPEND_SLASH=False
+
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -125,6 +127,7 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = False
+
 
 
 # Static files (CSS, JavaScript, Images)

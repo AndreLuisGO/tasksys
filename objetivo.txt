@@ -1,5 +1,6 @@
 Objetivo geral:
-Gerar uma aplicação (frontend/backend) que contenha um CRUD para criação de tarefas, além da opção de setar cada tarefa como concluída.
+Gerar uma aplicação (frontend/backend) que contenha um CRUD
+para criação de tarefas, além da opção de setar cada tarefa como concluída.
 
 Objetivos:
 - O backend deve ser feito em Django usando banco de dados PostgreSQL;
