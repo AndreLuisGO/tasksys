@@ -118,10 +118,6 @@ ou
 
 onde o /1/ deve ser a chave primária (PK) da tarefa que se deseja obter os dados. ( no caso, da tarefa de PK = 1)
 
-## Deploy
-
-Add additional notes about how to deploy this on a live system
-
 ## Construído com
 
 * [Dango](https://www.djangoproject.com/)
