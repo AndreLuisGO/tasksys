@@ -81,7 +81,12 @@ python3 manage.py runserver
 6 - Se tudo der certo, você irá ver a seguinte mensagem:
 
 ```
-Performing system checks...                                                                                                                                                                                                                     System check identified no issues (0 silenced).                                                                         April 27, 2017 - 15:01:37                                                                                               Django version 1.11, using settings 'tasksys.settings'                                                                  Starting development server at http://127.0.0.1:8000/                                                                   Quit the server with CTRL-BREAK.
+Performing system checks...
+System check identified no issues (0 silenced).
+April 27, 2017 - 15:01:37
+Django version 1.11, using settings 'tasksys.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
 ```
 
 
@@ -91,7 +96,7 @@ Performing system checks...                                                     
 
 O resultado é uma janela com a informação da API REST. Isso significa que o servidor da API está funcional e em execução.
 
- Caso queira ver o resultado em JSON, use:
+ Caso queira ver o resultado em formato JSON, use:
 
 `http://127.0.0.1:8000/tarefas/?format=json`
 
